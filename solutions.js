@@ -49,7 +49,7 @@ const calculateSide = (sideA, sideB) => {
 };
 
 console.log(calculateSide(12, 3));
-*/
+
 
 //Sum Array
 //Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array. Use a for loop within the function to iterate over the array and sum the contents.
@@ -61,5 +61,25 @@ const sumArray = (newArray) => {
 	return sum;
 };
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+*/
+
+//Prime Numbers
+
+//Insert Dash
+//Write a function insertDash that accepts a number as a parameter and returns a string with a dash inserted between any consecutive odd numbers. There should not be a dash at the end, it goes only between numbers.
+const insertDash = (num) => {
+	let numString = num.toString().split('');
+	for (i = 0; i < numString.length; i++) {
+		if (numString[i] % 2 === 1) {
+			return (numString[i] + "-");
+		} else {
+			return numString[i];
+		}
+	}
+};
+
+console.log(insertDash(7454793));
+
+
 
 
