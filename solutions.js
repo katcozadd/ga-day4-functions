@@ -25,7 +25,7 @@ const checkPalindrome = (word) => {
 
 let answer = checkPalindrome("Radar");
 console.log(answer);
-*/
+
 //Digit Sum
 //Write a function sumDigits that accepts a number and returns the sum of its digits.
 const sumDigits = (num) => {
@@ -39,4 +39,15 @@ const sumDigits = (num) => {
 };
 
 console.log(sumDigits(1234));
+*/
+//Pythagoras
+//Write a function calculateSide that takes two arguments: sideA and sideB, and returns the solution for sideC using the Pythagorean theorem.
+const calculateSide = (sideA, sideB) => {
+	let sideCSquared = (sideA * sideA) + (sideB * sideB);
+	console.log(sideCSquared);
+	return Math.sqrt(sideCSquared);
+};
+
+console.log(calculateSide(12, 3));
+
 
