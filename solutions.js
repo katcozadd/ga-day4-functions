@@ -39,7 +39,7 @@ const sumDigits = (num) => {
 };
 
 console.log(sumDigits(1234));
-*/
+
 //Pythagoras
 //Write a function calculateSide that takes two arguments: sideA and sideB, and returns the solution for sideC using the Pythagorean theorem.
 const calculateSide = (sideA, sideB) => {
@@ -49,5 +49,17 @@ const calculateSide = (sideA, sideB) => {
 };
 
 console.log(calculateSide(12, 3));
+*/
+
+//Sum Array
+//Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array. Use a for loop within the function to iterate over the array and sum the contents.
+const sumArray = (newArray) => {
+	let sum = 0;
+	for (let i = 0; i < newArray.length; i++) {
+		sum += newArray[i];
+	}
+	return sum;
+};
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
