@@ -12,7 +12,7 @@
 
 //Palindrome
 //Write a function checkPalindrome that accepts a single argument, a string. The function should return true (Boolean) if the string is a palindrome, false if it is not. Make sure your function will give the correct answer for words with capital letters.
-/*
+
 const checkPalindrome = (word) => {
 		let lowerCase = word.toLowerCase();
 		let palindrome = lowerCase.split('').reverse().join('');
@@ -61,9 +61,14 @@ const sumArray = (newArray) => {
 	return sum;
 };
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
-*/
+
 
 //Prime Numbers
+//Did not finish this one yet! Will come back to it!!
+const checkPrime = () => {
+	let num = 0;
+	for ( i = 0; i )
+}
 
 //Insert Dash
 //Write a function insertDash that accepts a number as a parameter and returns a string with a dash inserted between any consecutive odd numbers. There should not be a dash at the end, it goes only between numbers.
