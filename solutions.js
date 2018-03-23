@@ -13,8 +13,15 @@
 //Palindrome
 //Write a function checkPalindrome that accepts a single argument, a string. The function should return true (Boolean) if the string is a palindrome, false if it is not. Make sure your function will give the correct answer for words with capital letters.
 const checkPalindrome = (word) => {
-		return word === word.split('').reverse('').join('');
+		let lowerCase = word.toLowerCase();
+		let palindrome = lowerCase.split('').reverse().join('');
+		if (lowerCase === palindrome) {
+			return true;
+		} else {
+			return false;
+		}		
 };
 
-console.log(checkPalindrome("Radar"));
+let answer = checkPalindrome("Radar");
+console.log(answer);
 
