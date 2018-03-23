@@ -12,6 +12,7 @@
 
 //Palindrome
 //Write a function checkPalindrome that accepts a single argument, a string. The function should return true (Boolean) if the string is a palindrome, false if it is not. Make sure your function will give the correct answer for words with capital letters.
+/*
 const checkPalindrome = (word) => {
 		let lowerCase = word.toLowerCase();
 		let palindrome = lowerCase.split('').reverse().join('');
@@ -24,4 +25,18 @@ const checkPalindrome = (word) => {
 
 let answer = checkPalindrome("Radar");
 console.log(answer);
+*/
+//Digit Sum
+//Write a function sumDigits that accepts a number and returns the sum of its digits.
+const sumDigits = (num) => {
+	let numString = num.toString().split('');
+	let sum = 0;
+	for (let i = 0; i < numString.length; i++) {
+		sum = Number(numString[i]) + sum;
+	}
+	return sum;
+
+};
+
+console.log(sumDigits(1234));
 
